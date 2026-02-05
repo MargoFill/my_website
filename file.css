@@ -1,0 +1,146 @@
+/* Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ef83f3;
+    transition: color 0.3s;
+    font-family: "Brush Script MT";
+    /*Some fonts to use: Snell Roundhand,Comic Sans MS, papyrus, Century Gothic, Copperplate Gothic Light, Ink Free, Segoe Print*/
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    /*background: #181818;*/
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color:#ef83f3;
+    font-family:'Comic Sans MS';
+}
+
+.hero p {
+    font-size: 2rem;
+    color: #bbbbbb;
+    font-family: "Ink Free";
+}
+.hero-text{
+    margin-left: 100px;
+    text-align: left;
+}
+.hero .profile-pic {
+    width: 350px;
+    height: auto;
+    border-radius: 40px;
+    align-items: right;
+    margin-right: 100px;
+    border: 4px solid #ef83f3;
+}
+
+.hero-video-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+/* About */
+.about, .projects, .contact {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about h2, .projects h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ef83f3;
+}
+
+/* Projects */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(239, 131, 243, 0.4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #888;
+}
+
