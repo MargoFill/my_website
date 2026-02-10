@@ -47,9 +47,12 @@ header {
     padding: 100px 20px;
     /*background: #181818;*/
     display: flex;
-
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero h1 {
@@ -117,11 +120,19 @@ header {
   z-index: -1;
 }
 
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
 .hero-content {
   position: relative;
   color: white;
   text-align: center;
   padding-top: 30vh;
+  z-index: 2;
 }
 
 /* About */
@@ -412,50 +423,102 @@ footer {
 
 /* Hero Section Mobile */
 @media (max-width: 768px) {
+
     .hero {
-        flex-direction: column;  /* текст над картинкой или наоборот */
-        padding: 50px 20px;
+        position: relative;
+        width: 100%;
+        flex-direction: row; 
         text-align: center;
+        display: flex;
+        gap: 50px;
+        min-height: auto;
+        height: auto;
+        align-items: flex-start;
+        padding-top: 50px;
+        overflow: hidden;
     }
+
 
     .hero-text {
         margin-left: 0;
-        text-align: center;
+        text-align: start;
     }
 
     .hero h1 {
-        font-size: 2.5rem; /* уменьшаем заголовок */
+        font-size: 2.5rem; 
     }
 
     .hero p {
-        font-size: 1.2rem; /* уменьшаем подзаголовок */
+        font-size: 1.2rem;
     }
 
     .hero .profile-pic {
-        width: 180px;  /* уменьшаем картинку */
-        margin: 20px 0 0 0;
+        width: 90px;  
+        margin: 0 auto 20px;
+        align-items: center;
+        margin-right: 10px;
+        margin-top: 15px;
+        flex-shrink: 0;
     }
 
     .bg-video {
+        position: absolute;
         width: 100%;
         height: auto;
-        min-height: 200px; /* ограничение высоты */
+        min-height: 100%; 
         object-fit: cover;
         top: 0;
-        left: 0;
-        transform: none;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
     }
 }
 
 @media (max-width: 768px) {
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
-        margin-right: 0;
+        margin-right: 10px;
     }
 
     header {
         padding: 10px 0;
+        width: 100%;
+    }
+        .nav {
+        max-width: 1200px;
+    }
+
+    #modalCaption{
+        text-align: center;
+        word-wrap: break-word;
+    }
+    
+
+    .copy {
+        margin-left: -50px;
+    }
+    
+    footer, header {
+        width: 100%;
+        box-sizing: border-box; /* padding не увеличивает ширину */
+    }
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
     }
 }
 
