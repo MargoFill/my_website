@@ -24,7 +24,7 @@
         </video>
         <div class="hero-text">
             <h1><span class="highlight">Hi, my name is Margo!</span></h1>
-            <p><span class="highlight">Software Developer/ AI Specialist/ Embedded Programmer</span></p>
+            <p><span class="highlight">Software Developer/ AI Engineer/ Embedded Programmer</span></p>
         </div>
         <img src="profpic.jpg" alt="Me" class="profile-pic glass-border">
         
@@ -32,7 +32,7 @@
 
     <section id="about" class="about">
         <h2>About me</h2>
-        <p class="about-descr">I am a motivated Software Developer with a strong focus on IoT, embedded systems, and data-driven solutions. My experience spans international internships, hands-on engineering projects, and collaborative team environments where I’ve developed and tested real-world IoT applications, data monitoring systems, and secure network solutions. I enjoy working at the intersection of hardware and software, combining skills in Python, C++, cloud platforms, and cybersecurity tools to build efficient and reliable systems. I’m eager to grow professionally, contribute to innovative projects, and take on new challenges in modern technology environments.</p>
+        <p class="about-descr">My name is Margarita Filenko. I am a motivated Software Developer with a strong focus on IoT, embedded systems, and data-driven solutions. My experience spans international internships, hands-on engineering projects, and collaborative team environments where I’ve developed and tested real-world IoT applications, data monitoring systems, and secure network solutions. I enjoy working at the intersection of hardware and software, combining skills in Python, C++, cloud platforms, and cybersecurity tools to build efficient and reliable systems. I’m eager to grow professionally, contribute to innovative projects, and take on new challenges in modern technology environments.</p>
         <h2>Skills</h2>
         <div class="skills-list">
             <div class="skill-card pl">
@@ -95,38 +95,61 @@
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-list">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Description</p>
-            </div>
+            <a href="https://github.com/eurusfox-24/HoneyPot-SavoniaUAS" target="_blank">
+                <div class="project-card">
+                    <img class="project-pic" src="honeypot.JPG"></img>
+                    <h3>HoneyPot</h3>
+                    <p class="pr-descr">Description</p>
+                </div>
+            </a>
+            <a href="https://github.com/MargoFill/RAINMAS" target="_blank">
+                <div class="project-card">
+                    <img class="project-pic" src="rainmas.png"></img>
+                    <h3>RAINMAS</h3>
+                    <p class="pr-descr">Description</p>
+                </div>
+            </a>
+            <a href="https://github.com/RiceDefender/meditrack" target="_blank">
+                <div class="project-card">
+                    <img class="project-pic" src="meditrack.png"></img>
+                    <h3>Meditrack</h3>
+                    <p class="pr-descr">Description</p>
+                </div>
+            </a>
         </div>
     </section>
 
     <section id="certs" class="certs">
         <h2>Certificates</h2>
         <div class="cert-list">
-            <div class="cert-card">
-                <h3>Cert 1</h3>
-                <p>Description</p>
+            <div class="cert-card" >
+                <img src="certificates/Certificate_BigData101.jpg" data-full="certificates/Certificate_BigData101.jpg" class="cert-img" alt="Big Data 101"></img>
+                <h3>Big Data 101</h3>
             </div>
             <div class="cert-card">
-                <h3>Cert 2</h3>
-                <p>Description</p>
+                <img src="certificates/certificate_matlabWirelessComm.jpg" data-full="certificates/certificate_matlabWirelessComm.jpg" class="cert-img" alt="MATLAB Wireless Communication"></img>
+                <h3>MATLAB Wireless Communication</h3>
             </div>
             <div class="cert-card">
-                <h3>Cert 3</h3>
-                <p>Description</p>
+                <img src="certificates/certificate_matlabSignalProcessingOnramp.jpg" data-full="certificates/certificate_matlabSignalProcessingOnramp.jpg" class="cert-img" alt="MATLAB Signal Processing"></img>
+                <h3>MATLAB Signal Processing</h3>
+            </div>
+            <div class="cert-card">
+                <img src="certificates/certificateDeepLearning.jpg" data-full="certificates/certificateDeepLearning.jpg" class="cert-img" alt="MATLAB Deep Learning"></img>
+                <h3>MATLAB Deep Learning</h3>
+            </div>
+            <div class="cert-card">
+                <img src="certificates/certificate_onramp1.jpg" data-full="certificates/certificate_onramp1.jpg" class="cert-img" alt="MATLAB Onramp"></img>
+                <h3>MATLAB Onramp</h3>
             </div>
         </div>
     </section>
+
+    <div id="certModal" class="cert-modal">
+        <span class="cert-close"><img src="close.png" class="cert-close-img"></span>
+        <img class="cert-modal-img" id="certModalImg">
+        <p id="modalCaption"></p>
+    </div>
 
     
     <footer class="footer">
@@ -137,5 +160,7 @@
             <li><a href="mailto:fil7marg@gmail.com">Email Me!</a></li>
         </ul>
     </footer>
+
+    <script src="cert.js"></script>
 </body>
 </html>
