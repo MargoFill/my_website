@@ -427,10 +427,10 @@ footer {
     .hero {
         position: relative;
         width: 100%;
-        flex-direction: row; 
+        flex-direction: column; 
         text-align: center;
         display: flex;
-        gap: 50px;
+        gap: 20px;
         min-height: auto;
         height: auto;
         align-items: flex-start;
@@ -441,7 +441,7 @@ footer {
 
     .hero-text {
         margin-left: 0;
-        text-align: start;
+        text-align: center;
     }
 
     .hero h1 {
@@ -453,11 +453,11 @@ footer {
     }
 
     .hero .profile-pic {
-        width: 90px;  
-        margin: 0 auto 20px;
+        width: 180px;  
         align-items: center;
-        margin-right: 10px;
-        margin-top: 15px;
+        padding: auto;
+        display: flex;
+        margin: auto;
         flex-shrink: 0;
     }
 
