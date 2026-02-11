@@ -510,10 +510,13 @@ footer {
     
 
     .copy {
-        margin-left: -50px;
-    }
-    footer {
         font-family: "Papyrus";
+        text-align: start;
+    }
+
+    .fast-contact a {
+        font-family: "Papyrus";
+        text-align: end;
     }
     
     footer, header {
