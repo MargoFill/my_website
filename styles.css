@@ -487,6 +487,14 @@ footer {
         margin-right: 10px;
     }
 
+    .nav-links a {
+        text-decoration: none;
+        color: #fdc6ff;
+        transition: color 0.3s;
+        font-family: "Brush Script MT";
+        font-size: 1rem;
+    }
+
     header {
         padding: 10px 0;
         width: 100%;
@@ -503,6 +511,9 @@ footer {
 
     .copy {
         margin-left: -50px;
+    }
+    footer {
+        font-family: "Brush Script MT";
     }
     
     footer, header {
