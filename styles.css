@@ -491,7 +491,7 @@ footer {
         text-decoration: none;
         color: #fdc6ff;
         transition: color 0.3s;
-        font-family: "Brush Script MT";
+        font-family: "Papyrus";
         font-size: 1rem;
     }
 
@@ -513,7 +513,7 @@ footer {
         margin-left: -50px;
     }
     footer {
-        font-family: "Brush Script MT";
+        font-family: "Papyrus";
     }
     
     footer, header {
